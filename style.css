@@ -1,29 +1,35 @@
+/*sets the font for all the document to 18px in size and font family arial, generic sans-serif if user's machine system does not have arial, background color set to a very light gray  */
 body {
     font: 18px arial, sans-serif;
     background: #eee;
   }
   
+  /* the width of the div with id animals is set to 70percent of the display */
   #animals {
     width: 70%;
   }
   
+  /* class animal buttons are floated left to align them in rows with 10px of space all around each*/
   .animal-item {
     float: left;
     padding: 10px;
   }
   
+  /* form is being displayed to the right or the id animals div, occupying 30% of the display, with 20px of space all around it, this form is self contained*/
   form {
     float: right;
     width: 30%;
     padding: 20px;
   }
   
+  /* the label takes the 30% granted to the form, is pushing the input field 10px towards the bottom and its weight is being increased */
   label {
     display: block;
     margin-bottom: 10px;
     font-weight: 700;
   }
   
+  /* the input field required is text, taking the whole width of the form and it is 30px in height, it is pushing the submit button 30px towards the bottom, the text size is 18px*/
   input[type="text"] {
     width: 100%;
     height: 30px;
@@ -31,6 +37,7 @@ body {
     font-size: 18px;
   }
   
+  /* submit button, 5px of padding space top and bottom 20 right and left, margin space 10px right and left, sumtit text is 18px color is white, when the pointer is on top of button it changes to a hand, the background color is green, no border, corners rounded 5px at each corner, light gray drop shadow */
   button,
   input[type="submit"] {
     padding: 5px 20px;
@@ -44,11 +51,13 @@ body {
     box-shadow: 2px 2px 3px #bbb;
   }
   
+  /* when cursor is on top of button, the background turns a dark green */
   button:hover,
   input[type="submit"]:hover {
     background: #334e4d;
   }
   
+  /* buttons for animal categories turn the same dark green as the submit button when cursor is on top of them */
   button.active {
     background: #334e4d;
   }
