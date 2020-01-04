@@ -143,11 +143,11 @@ function populateButtons(arrayToUse, classToAdd, areaToAddTo) {
 }); // closes on click event and its function
 
 // the on() method is attaching an event function to the div with the id add-animal, in this case the event is a click
-$("#add-animal").on("click", function (event) {
+    $("#add-animal").on("click", function (event) {
     
     // the preventDefaul method can be used because "click" event is a cancelable.
-    // this method stops the default behavior of the click will to occur
-    // oin this case the method is preventing the click from appending the new animal button to the div with the id animal-buttons
+    // this method stops the default behavior of the click 
+    // in this case the method is preventing the click from appending the new animal button to the div with the id animal-buttons
     event.preventDefault();
     
     // variable newAnimal is being declared
@@ -164,15 +164,16 @@ $("#add-animal").on("click", function (event) {
     if (newAnimal.length > 2) {
     
     //the new animal with at least three letters is being push to the end of the array animals
-    animals.push(newAnimal);
+        animals.push(newAnimal);
+
     }
     // function populateButtons is being called and the parameters parameters being fed to it are animals (the variable containing the array of animal categories), "animal-button" (the class added to variable a which is the button), "animals-buttons" (is the div with the buttons for all the categories) 
     // this is being called here to populate the new animal
-    populateButtons(animals, "animal-button", "#animal-buttons");
+        populateButtons(animals, "animal-button", "#animal-buttons");
 
 }); //closes click on div with id add-animal and its function
 
 // function populateButtons is being called and the parameters parameters being fed to it are animals (the variable containing the array of animal categories), "animal-button" (the class added to variable a which is the button), "animals-buttons" (is the div with the buttons for all the categories)
 // this is being called here to populate on load
-populateButtons(animals, "animal-button", "#animal-buttons");
+    populateButtons(animals, "animal-button", "#animal-buttons");
 }); //closes document ready function

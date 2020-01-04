@@ -6,6 +6,7 @@
 <html lang="en">
 
 <!-- the head tag contains the metadata this tag contains the document title, liked style and script tags,. this tag contains information about the page and it does not get displayed in the browser, this tag requires a closing tag-->
+
 <head>
   <!--this tag specifies the character encoding for the html document  -->
   <!-- utf-8 is the character encoding for unicode and is one that has better chance to be understood by most browsers -->
@@ -20,12 +21,14 @@
   <!-- type is the attribute that specifies the type of doc being linked -->
   <!-- href specifies the path to the file to be linked -->
   <!-- link is a self closing tag -->
+  <link rel="stylesheet" type="text/css" href="reset.css">
   <link rel="stylesheet" type="text/css" href="style.css">
 
   <!-- head closing tag -->
 </head>
 
 <!-- defines the document's body or largest container, needs  a closing tag-->
+
 <body>
 
   <!-- divs are used as containers for other html elements, in this case it is being used as a place holder for the animal buttons generated via jquery, needs a closing tag -->
@@ -33,15 +36,15 @@
 
   </div>
 
-<!--form are used to create html content from user inputs, this form it is made of one label and two inputs, forms can contain different kinds of elements: buttons, text areas, field sets, these I am somewhat familiar with, I found others I have not seen before, like: select, option, optgroup-->
-<!-- forms need a closing tag -->
+  <!--form are used to create html content from user inputs, this form it is made of one label and two inputs, forms can contain different kinds of elements: buttons, text areas, field sets, these I am somewhat familiar with, I found others I have not seen before, like: select, option, optgroup-->
+  <!-- forms need a closing tag -->
   <form id="animal-form">
-    <label for="animal-input">Add an animal</label>
-    <input type="text" id="animal-input"><br>
+    <label for="animal-input">Add your own button</label>
+    <input type="text" id="animal-input">
     <input id="add-animal" type="submit" value="Submit">
   </form>
 
-   <!-- divs are used as containers for other html elements, in this case it is being used as a place holder for the animal images generated via the called to the api via jquery, needs a closing tag -->
+  <!-- divs are used as containers for other html elements, in this case it is being used as a place holder for the animal images generated via the called to the api via jquery, needs a closing tag -->
   <div id="animals">
 
   </div>
@@ -49,11 +52,21 @@
   <!-- the script element can contain of point to an external script file, it needs a closing tag-->
   <!-- the first script tag uses the source attribute to direct the page to an external jquery library -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  
+
   <!-- this script tag uses the source attribute to direct the page to an internal javascript file, the path is short because html and javascript files reside in the same level folder -->
   <script src="app.js"></script>
-  
-<!-- body's closing tag -->
+
+  <!-- footer section -->
+  <footer>
+    <div id="bottom">
+      <h6 id="foot">Mariño Carranza 2019</h6>
+    </div>
+
+  </footer>
+
+  <!-- body's closing tag -->
 </body>
+
 <!-- html closing tag -->
+
 </html>
