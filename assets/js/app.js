@@ -52,7 +52,7 @@ function populateButtons(arrayToUse, classToAdd, areaToAddTo) {
         var type = $(this).attr("data-type");
         
         // var queryURL is declared and it is assigned the api giphy's web address, the data type is being concatenated  along with the api key and the maximum number of results to be displayed on the page
-    var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + type + "&api_key=BkaUZZWcFij6J7AoQj3WtPb1R2p9O6V9&limit=10";
+    var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + type + "&api_key=BkaUZZWcFij6J7AoQj3WtPb1R2p9O6V9&limit=10";
 
     // the ajax method is being used to perform an asynchronous request to the api
     $.ajax({
